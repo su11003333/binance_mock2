@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { SITE_DESCRIPTION, SITE_NAME } from '../constants';
+import heroImg from '../../public/img/bit.jpg';
 
 const Hero = () => {
   return (
@@ -24,8 +25,8 @@ const Hero = () => {
           {/* Text content - stacks vertically on mobile, side by side on desktop */}
           <div className='text-center lg:w-1/2 lg:pr-8 lg:text-left'>
             <h1 className='text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl'>
-              <span className='block'>虛擬貨幣的</span>
-              <span className='text-bnb-yellow mt-2 block'>最佳轉移平台</span>
+              <span className='block'>加密貨幣交易所</span>
+              <span className='text-bnb-yellow mt-2 block'>註冊與兌換專家</span>
             </h1>
             <p className='mx-auto mt-4 max-w-3xl text-base text-gray-300 sm:mt-6 sm:text-lg md:text-xl lg:mx-0'>
               {SITE_DESCRIPTION}
@@ -54,16 +55,16 @@ const Hero = () => {
                 {/* Mobile image (smaller and lighter) */}
                 <source
                   media='(max-width: 640px)'
-                  srcSet='https://images.unsplash.com/photo-1639762681057-408e52192e55?auto=format&fit=crop&q=60&w=480&ixlib=rb-4.0.3'
+                  srcSet={heroImg}
                 />
                 {/* Tablet image (medium size and quality) */}
                 <source
                   media='(max-width: 1024px)'
-                  srcSet='https://images.unsplash.com/photo-1639762681057-408e52192e55?auto=format&fit=crop&q=70&w=800&ixlib=rb-4.0.3'
+                  srcSet={heroImg}
                 />
                 {/* Desktop image (higher quality) */}
                 <img
-                  src='https://images.unsplash.com/photo-1639762681057-408e52192e55?auto=format&fit=crop&q=80&w=1200&ixlib=rb-4.0.3'
+                  src={heroImg}
                   alt='虛擬幣小幫手生態系統'
                   className='animate-float h-auto max-h-[280px] w-full object-cover sm:max-h-[350px] md:max-h-[400px] lg:max-h-[500px]'
                   loading='eager'
