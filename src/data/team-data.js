@@ -1,8 +1,8 @@
 export const teamData = [
   {
     img: "/img/team-1.jpg",
-    name: "Ryan Tompson",
-    position: "Web Developer",
+    name: "張柏宇",
+    position: "區塊鏈開發工程師",
     socials: [
       {
         color: "light-blue",
@@ -39,8 +39,8 @@ export const teamData = [
   },
   {
     img: "/img/team-3.jpg",
-    name: "Alexa Smith",
-    position: "UI/UX Designer",
+    name: "林志軒",
+    position: "交易所介面設計師",
     socials: [
       {
         color: "light-blue",
